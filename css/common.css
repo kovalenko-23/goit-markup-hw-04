@@ -1,0 +1,356 @@
+:root {
+  --primary-text-color: #757575;
+  --primary-title-color: #212121;
+  --alt-logo-color: #2196f3;
+  --bcg-button-color: #f5f4fa;
+  --bcg-color: #f5f4fa;
+  --primary-white-color: #fff;
+  --alt-bcg-color: #2f303a;
+  --address-items-color: rgb(255, 255, 255, 0.6);
+}
+
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* outline: 2px solid tomato; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/*===NAVIGATION===*/
+.page-header .list {
+  align-items: center;
+}
+
+.page-header.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+}
+
+.page-header .list {
+  display: flex;
+}
+
+.nav-links {
+  display: flex;
+}
+
+/* Web Studio link */
+.link-main {
+  display: flex;
+  align-items: center;
+  margin-right: 93px;
+}
+
+.part-web {
+  color: var(--alt-logo-color);
+}
+
+/* super cool option */
+.page-header .item + .item {
+  margin-left: 50px;
+}
+
+.link-main:focus,
+.link-main:hover {
+  color: #000;
+}
+
+.nav-links .link:hover,
+.nav-links .link:focus,
+.nav-links .link.current,
+.address a:hover,
+.address a:focus {
+  color: #2196f3;
+}
+
+.address a {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.nav-links .link-main {
+  color: #000;
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.38;
+  letter-spacing: 0.03em;
+}
+
+a,
+.nav-links .link {
+  text-decoration: none;
+}
+
+.nav-links .link {
+  color: var(--primary-title-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+/* Address list */
+.address.list {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+/*====MAIN====*/
+
+/*===HERO===*/
+.section-hero {
+  background-color: var(--alt-bcg-color);
+  text-align: center;
+  padding-bottom: 200px;
+  padding-top: 200px;
+}
+
+.section-hero .section-title {
+  color: var(--primary-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+.section-hero .button-order {
+  border-radius: 4px;
+  border: none;
+  padding: 10px 32px;
+  min-width: 200px;
+
+  background-color: var(--alt-logo-color);
+  color: var(--primary-white-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.section-hero button:hover,
+.section-hero button:focus {
+  background-color: var(--bcg-button-color);
+  color: var(--primary-title-color);
+}
+
+/* Section Advantages */
+
+.section-advantages .list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list.advantages > .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.section-advantages .section-item {
+  color: var(--primary-title-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.section-advantages {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-advantages .section-item {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.section-advantages .section-text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.section-item.top {
+  margin-top: 0;
+}
+
+.section-advantages .section-text {
+  color: var(--primary-text-color);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+/* Activities section */
+.section-activities .list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-activities {
+  padding-bottom: 94px;
+}
+
+.section-activities .section-title {
+  color: var(--primary-title-color);
+  font-weight: bold;
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+/* Our Team section */
+.section-team .list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-team {
+  background-color: var(--bcg-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-team .worker {
+  background-color: var(--primary-white-color);
+}
+
+.section-team .section-title {
+  color: var(--primary-title-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.section-team .section-item {
+  color: var(--primary-title-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 0.84;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.section-team .section-text {
+  color: var(--primary-text-color);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Footer */
+footer {
+  background-color: #2f303a;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.city {
+  color: var(--primary-white-color);
+}
+
+.logo-link {
+  display: inline-block;
+  color: var(--primary-white-color);
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
+
+.auth-nav .city {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.logo-link:hover,
+.logo-link:focus {
+  color: var(--primary-white-color);
+}
+
+.auth-nav .auth {
+  color: var(--address-items-color);
+}
+
+footer a:hover,
+footer a:focus {
+  color: var(--alt-bcg-color);
+}
+
+.city-address {
+  display: inline-block;
+  margin-bottom: 9px;
+}
+
+.auth.mail {
+  margin-bottom: 9px;
+  display: inline-block;
+}
