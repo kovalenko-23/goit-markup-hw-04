@@ -144,11 +144,20 @@ a,
 /*====MAIN====*/
 
 /*===HERO===*/
-.section-hero {
-  background-color: var(--alt-bcg-color);
+.overlay {
   text-align: center;
   padding-bottom: 200px;
   padding-top: 200px;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-background.jpg);
 }
 
 .section-hero .section-title {
@@ -159,11 +168,11 @@ a,
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   margin-top: 0;
 }
 
-.section-hero .button-order {
+.button-order {
   border-radius: 4px;
   border: none;
   padding: 10px 32px;
@@ -267,6 +276,9 @@ a,
 
 .section-team .worker {
   background-color: var(--primary-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .section-team .section-title {
