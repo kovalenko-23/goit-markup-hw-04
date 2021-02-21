@@ -135,6 +135,20 @@ a,
 }
 
 /* Address list */
+
+.auth-items {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.address.list .item:hover {
+  fill: var(--alt-logo-color);
+}
+
 .address.list {
   display: flex;
   justify-content: flex-end;
