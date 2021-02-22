@@ -7,6 +7,7 @@
   --primary-white-color: #fff;
   --alt-bcg-color: #2f303a;
   --address-items-color: rgb(255, 255, 255, 0.6);
+  --social-links-color-1: #afb1b8;
 }
 
 body {
@@ -141,7 +142,7 @@ a,
   align-items: center;
 }
 
-.icon {
+.address.list .icon {
   margin-right: 10px;
 }
 
@@ -343,6 +344,37 @@ a,
   letter-spacing: 0.03em;
 }
 
+/* Social links */
+.list-socials {
+  display: flex;
+  justify-content: space-around;
+  padding: 16px 32px 30px;
+}
+
+.list-socials .social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-item > .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--social-links-color-1);
+}
+
+.social-item > .item:hover {
+  background-color: var(--alt-logo-color);
+  color: var(--primary-white-color);
+}
+
+.social-item .icon {
+  fill: currentColor;
+}
 /* Footer */
 footer {
   background-color: #2f303a;
