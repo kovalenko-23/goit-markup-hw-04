@@ -143,6 +143,7 @@ a,
 }
 
 .address.list .icon {
+  fill: currentColor;
   margin-right: 10px;
 }
 
