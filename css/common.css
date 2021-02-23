@@ -315,6 +315,10 @@ a,
   border-radius: 0px 0px 4px 4px;
 }
 
+.worker-info {
+  padding: 30px 32px;
+}
+
 .section-team .section-title {
   color: var(--primary-title-color);
   font-weight: bold;
@@ -332,7 +336,6 @@ a,
   line-height: 0.84;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -343,13 +346,14 @@ a,
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 
 /* Social links */
 .list-socials {
   display: flex;
   justify-content: space-around;
-  padding: 16px 32px 30px;
+  padding: 0;
 }
 
 .list-socials .social-item:not(:last-child) {
