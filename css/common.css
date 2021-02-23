@@ -518,8 +518,8 @@ footer a:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   fill: var(--bcg-button-color);
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
