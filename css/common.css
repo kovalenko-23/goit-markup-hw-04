@@ -524,14 +524,12 @@ footer a:focus {
   border-radius: 50%;
 }
 
-.button .social-button:hover {
+.button .social-button:hover,
+.button .social-button:focus {
   fill: var(--primary-white-color);
   background-color: var(--alt-logo-color);
 }
 
 .social-links .button:not(:last-child) {
   margin-right: 10px;
-}
-
-.social-links .button {
 }
