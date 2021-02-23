@@ -367,7 +367,8 @@ a,
   color: var(--social-links-color-1);
 }
 
-.social-item > .item:hover {
+.social-item > .item:hover,
+.social-item > .item:focus {
   background-color: var(--alt-logo-color);
   color: var(--primary-white-color);
 }
@@ -375,14 +376,73 @@ a,
 .social-item .icon {
   fill: currentColor;
 }
-/* Footer */
+
+/*===Clients section=== */
+.section-clients .container {
+  padding-top: 98px;
+  padding-bottom: 92px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-clients .section-title {
+  color: var(--primary-title-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.clients-list .client:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-list .button {
+  width: 170px;
+  height: 90px;
+  border: 1px var(--social-links-color-1) solid;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--social-links-color-1);
+}
+
+.clients-list .button:hover,
+.clients-list .button:focus {
+  color: var(--alt-logo-color);
+  background-color: var(--primary-white-color);
+  border-color: var(--alt-logo-color);
+}
+
+.clients-list .icon {
+  fill: currentColor;
+}
+
+/*===Footer===*/
 footer {
   background-color: #2f303a;
 }
 
-.footer {
+.footer-wraper {
+  display: flex;
+  align-items: baseline;
+  width: 1200px;
   padding-top: 60px;
   padding-bottom: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .city {
@@ -429,4 +489,49 @@ footer a:focus {
 .auth.mail {
   margin-bottom: 9px;
   display: inline-block;
+}
+
+.social-links {
+  margin-left: 70px;
+}
+
+.social-links.title {
+  color: var(--primary-white-color);
+  margin-bottom: 20px;
+  margin-left: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.social-links .buttons {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.button .social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  fill: var(--bcg-button-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.button .social-button:hover {
+  fill: var(--primary-white-color);
+  background-color: var(--alt-logo-color);
+}
+
+.social-links .button:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-links .button {
 }
