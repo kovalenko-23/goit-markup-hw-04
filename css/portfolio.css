@@ -49,11 +49,14 @@ img {
   margin-right: 93px;
 }
 
+.section-portfolio:first-child {
+  padding-top: 94px;
+  padding-bottom: 20px;
+}
+
 .section-portfolio .list.buttons {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
-  padding-bottom: 20px;
 }
 
 .section-portfolio .section-button {
@@ -101,6 +104,8 @@ img {
   margin-top: -30px;
   justify-content: space-between;
   padding-bottom: 94px;
+  padding: 0;
+  margin: 0;
   /* outline: 1px solid tomato; */
 }
 
